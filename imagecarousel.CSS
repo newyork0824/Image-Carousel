@@ -1,0 +1,181 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  
+  header {
+    box-shadow: 0 0 10px gray;
+    max-width:90%;
+    margin: 0 auto;
+  }
+  
+  .site-logo {
+    margin-left:2em;
+    font-weight:700;
+  }
+  
+  .nav-headline {
+    margin-bottom: 0;
+  }
+  
+  .nav-subtitle {
+    margin-top:0;
+    font-size:0.7rem;
+    color: red;
+    margin-right: 0.9em;
+  }
+  
+  .nav-container {
+    display:flex;
+    justify-content:space-between;;
+  }
+  
+  .nav-bar {
+    display:flex;
+    justify-content:space-between;
+    gap:5em;
+    list-style:none;
+    margin-right:2em;
+    margin-top:1.6em;
+  }
+  
+  nav a {
+    text-decoration:none;
+    color:black;
+  }
+  
+  .main-nav-items {
+    position: relitive;
+    font-size:1.1rem;
+  }
+  
+  .main-nav-items:hover {
+    color:lightblue;
+  }
+  
+  .main-nav-items:hover .dropdown {
+    opacity:1;
+    visbility:visible;
+  }
+  
+  .dropdown {
+    display:flex;
+    flex-direction:column;
+    list-style:none;
+    gap:1em;
+    box-shadow: 0 0 10px gray;
+    position:absolute;
+    top:-1;
+    background:white;
+    opacity:0;
+    visbility:hidden;
+    transition: opacity 2ms;
+     padding: 1em;
+    
+  }
+  
+  .dropdown-items {
+    
+  }
+  
+  .dropdown-items a:hover {
+    color:lightblue;
+  }
+  
+  @media screen and (max-width:700px) {
+    .nav-container {
+      flex-direction:column;
+    }
+    
+    .site-logo {
+      text-align:center;
+      margin-right: 3em;
+    }
+    
+    .nav-bar {
+      justify-content:center;
+      margin-right:0.6em;
+    }
+    
+  }
+  
+  
+  
+  
+  
+  .carousel-headline {
+    text-align: center;
+    margin-bottom: 2em;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  
+  .carousel-container {
+    width:60%;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  
+  
+  
+  .carousel-items {
+    width:100%;
+    display:none;
+    max-width: 700px;
+  }
+  
+  .carousel-items-visible {
+    display: block;
+    max-width: 700px;
+  }
+  
+  .carousel-items-hidden {
+    display:none;
+  }
+  
+  .carousel-imgs {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-actions {
+    display:flex;
+    justify-content:space-between;
+    background: rgba(0,0,0,20);
+    
+  }
+  
+  .direction-btns {
+    padding:1em;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: white;
+    cursor:pointer;
+    
+    
+  }
+  
+  .slide-btns {
+  border-radius: 2em;
+    width:5%;
+    height:25px;
+    margin-top: 1.3em;
+    cursor:pointer;
+    border: none;
+  
+  }
+  
+  @media screen and (max-width:700px) {
+    .carousel-container {
+      width:90%;
+    }
+    
+    .carousel-headline {
+      font-size:1.5rem;
+    }
+    
+    
+    
+  }
+  
+  
